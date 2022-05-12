@@ -5,7 +5,8 @@ interface InputProps {
   onChange: (name: string, e: any) => void;
   value: number | string;
   name: string;
-  label: string;
+  label?: string;
+  placeholder?: string;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -14,10 +15,12 @@ const Input: React.FC<InputProps> = ({
   name,
   label,
   onChange,
+  placeholder,
 }) => (
   <div className='tr-input'>
     <label>{label}</label>
     <input
+      placeholder={placeholder}
       type={type || 'number'}
       onChange={e => onChange(name, e)}
       value={value}

@@ -1,5 +1,5 @@
 import * as React from "react";
-import Input from "../common/input";
+import Input from "../common/Input/input";
 
 interface FormProps {
   onChangeText: (name: string, e: any) => void;
