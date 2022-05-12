@@ -1,0 +1,23 @@
+.travel-recording-form {
+  display: flex;
+  height: 100vh;
+}
+
+label, h3 {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: large;
+  font-weight: bold;
+}
+ 
+.submit-form {
+  padding: 1rem;
+  overflow: auto;
+  margin-bottom: 2rem;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
